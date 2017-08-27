@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import CoinRow from './CoinRow';
 import type { Coin } from '../coinlist.types';
 
@@ -13,14 +14,20 @@ class CoinList extends Component<Props> {
     return (
       <div>
         <h1>CoinList</h1>
-        <ul>
+        <List>
           {coins.length > 0
             ? coins.map(coin => <CoinRow key={coin.id} coin={coin} />)
             : <li>Loading coins...</li>}
-        </ul>
+        </List>
       </div>
     );
   }
 }
+
+const List = styled.ul`
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0;
+`;
 
 export default CoinList;
