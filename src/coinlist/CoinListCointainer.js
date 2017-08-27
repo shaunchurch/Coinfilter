@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { resCoins } from './coinlist.actions';
+import { reqCoins, resCoins } from './coinlist.actions';
 import { selectCoins } from './coinlist.selectors';
 import CoinList from './components/CoinList';
 import type { AppState } from '../types';
@@ -16,11 +16,8 @@ type Props = {
 class CoinListContainer extends Component<Props> {
   componentDidMount() {
     const { dispatch } = this.props;
-    fetch('https://api.coinmarketcap.com/v1/ticker/')
-      .then(res => res.json())
-      .then(res => {
-        dispatch(resCoins(res));
-      });
+    dispatch(reqCoins());
+    // dispatch(resCoins(res));
   }
   render() {
     return <CoinList coins={this.props.coins} {...this.props} />;

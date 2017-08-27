@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`coinlist.actions reqCoins should return a coinlist/REQ_COINS action 1`] = `
+Object {
+  "type": "coinlist/REQ_COINS",
+}
+`;
+
 exports[`coinlist.actions resCoins should return a coinlist/RES_COINS_SUCCESS action 1`] = `
 Object {
   "payload": Array [
