@@ -37,22 +37,14 @@
       "!src/index.js",
       "!src/registerServiceWorker.js"
     ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "coverageReporters": [
-      "json",
-      "lcov",
-      "html",
-      "text",
-      "text-summary"
-    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "coverageReporters": ["json", "lcov", "html", "text", "text-summary"],
     "coverageThreshold": {
       "global": {
-        "branches": 75,
-        "functions": 75,
-        "lines": 75,
-        "statements": 75
+        "branches": 85,
+        "functions": 85,
+        "lines": 85,
+        "statements": 85
       }
     }
   }
