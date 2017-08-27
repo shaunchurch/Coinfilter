@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`coinlist.actions resCoins should return a coinlist/RES_COINS_SUCCESS action 1`] = `
+Object {
+  "payload": Array [
+    Object {
+      "24h_volume_usd": "1511610000.0",
+      "available_supply": "16526487.0",
+      "id": "bitcoin",
+      "last_updated": "1503791971",
+      "market_cap_usd": "71929882019.0",
+      "name": "Bitcoin",
+      "percent_change_1h": "0.18",
+      "percent_change_24h": "-0.45",
+      "percent_change_7d": "5.29",
+      "price_btc": "1.0",
+      "price_usd": "4352.4",
+      "rank": "1",
+      "symbol": "BTC",
+      "total_supply": "16526487.0",
+    },
+    Object {
+      "24h_volume_usd": "514181000.0",
+      "available_supply": "94263186.0",
+      "id": "ethereum",
+      "last_updated": "1503791974",
+      "market_cap_usd": "31472781162.0",
+      "name": "Ethereum",
+      "percent_change_1h": "0.26",
+      "percent_change_24h": "0.58",
+      "percent_change_7d": "13.11",
+      "price_btc": "0.0768412",
+      "price_usd": "333.882",
+      "rank": "2",
+      "symbol": "ETH",
+      "total_supply": "94263186.0",
+    },
+  ],
+  "type": "coinlist/RES_COINS_SUCCESS",
+}
+`;
