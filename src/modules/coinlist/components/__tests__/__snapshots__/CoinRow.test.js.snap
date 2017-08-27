@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CoinRow /> should render <Price /> in the correct style when no moon 1`] = `
+<div
+  className="sc-htpNat iSValt"
+/>
+`;
+
+exports[`<CoinRow /> should render a coin row negative 1`] = `
+<styled.li>
+  <styled.div>
+    2
+  </styled.div>
+  <styled.div
+    width={30}
+  >
+    <img
+      src="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png"
+    />
+  </styled.div>
+  <styled.div
+    moon={true}
+  >
+    <NumberFormat
+      allowNegative={true}
+      decimalSeparator="."
+      displayType="text"
+      isAllowed={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      onMouseUp={[Function]}
+      prefix="$"
+      suffix=""
+      thousandSeparator={true}
+      type="text"
+      value={333.882}
+    />
+  </styled.div>
+  <styled.div>
+    <NumberFormat
+      allowNegative={true}
+      decimalSeparator="."
+      displayType="text"
+      isAllowed={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      onMouseUp={[Function]}
+      prefix="$"
+      suffix=""
+      thousandSeparator={true}
+      type="text"
+      value={31472781162}
+    />
+  </styled.div>
+  <styled.div>
+    <NumberFormat
+      allowNegative={true}
+      decimalSeparator="."
+      displayType="text"
+      isAllowed={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      onMouseUp={[Function]}
+      prefix="$"
+      suffix=""
+      thousandSeparator={true}
+      type="text"
+      value={514181000}
+    />
+  </styled.div>
+</styled.li>
+`;
+
+exports[`<CoinRow /> should render a coin row positive 1`] = `
+<styled.li>
+  <styled.div>
+    1
+  </styled.div>
+  <styled.div
+    width={30}
+  >
+    <img
+      src="https://files.coinmarketcap.com/static/img/coins/32x32/bitcoin.png"
+    />
+  </styled.div>
+  <styled.div
+    moon={false}
+  >
+    <NumberFormat
+      allowNegative={true}
+      decimalSeparator="."
+      displayType="text"
+      isAllowed={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      onMouseUp={[Function]}
+      prefix="$"
+      suffix=""
+      thousandSeparator={true}
+      type="text"
+      value={4352.4}
+    />
+  </styled.div>
+  <styled.div>
+    <NumberFormat
+      allowNegative={true}
+      decimalSeparator="."
+      displayType="text"
+      isAllowed={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      onMouseUp={[Function]}
+      prefix="$"
+      suffix=""
+      thousandSeparator={true}
+      type="text"
+      value={71929882019}
+    />
+  </styled.div>
+  <styled.div>
+    <NumberFormat
+      allowNegative={true}
+      decimalSeparator="."
+      displayType="text"
+      isAllowed={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      onMouseUp={[Function]}
+      prefix="$"
+      suffix=""
+      thousandSeparator={true}
+      type="text"
+      value={1511610000}
+    />
+  </styled.div>
+</styled.li>
+`;
+
+exports[`<CoinRow /> should render in the correct style when moon 1`] = `
+<div
+  className="sc-htpNat iSValt"
+/>
+`;

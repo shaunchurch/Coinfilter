@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import NumberFormat from 'react-number-format';
+import { Row, Rank, Logo, Price, Cell } from './styled';
 
 import type { Coin } from '../coinlist.types';
 
@@ -55,45 +55,5 @@ class CoinRow extends Component<Props> {
     );
   }
 }
-
-const Row = styled.li`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  margin: 8px 0;
-  padding: 8px 0;
-  color: #999;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out;
-  &:hover {
-    color: #333;
-    background-color: #f9f9f9;
-  }
-`;
-
-const Cell = styled.div`
-  display: flex;
-  min-width: 180px;
-  max-width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  align-items: center;
-  text-align: right;
-  justify-content: flex-end;
-  font-family: 'menlo', 'monaco', 'courier', monospace;
-`;
-
-const Price = Cell.extend`
-  width: 110px;
-  color: ${props => (props.moon ? props.theme.green : props.theme.red)};
-`;
-
-const Logo = styled.div`width: 40px;`;
-const Rank = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  color: #ccc;
-`;
 
 export default CoinRow;

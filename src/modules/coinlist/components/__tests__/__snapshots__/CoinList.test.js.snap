@@ -1,323 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CoinList /> should render a list of coins when supplied 1`] = `
-<CoinList
-  coins={
-    Array [
-      Object {
-        "24h_volume_usd": 1511610000,
-        "available_supply": 16526487,
-        "id": "bitcoin",
-        "last_updated": 1503791971,
-        "market_cap_usd": 71929882019,
-        "name": "Bitcoin",
-        "percent_change_1h": 0.18,
-        "percent_change_24h": -0.45,
-        "percent_change_7d": 5.29,
-        "price_btc": 1,
-        "price_usd": 4352.4,
-        "rank": 1,
-        "symbol": "BTC",
-        "total_supply": 16526487,
-      },
-      Object {
-        "24h_volume_usd": 514181000,
-        "available_supply": 94263186,
-        "id": "ethereum",
-        "last_updated": 1503791974,
-        "market_cap_usd": 31472781162,
-        "name": "Ethereum",
-        "percent_change_1h": 0.26,
-        "percent_change_24h": 0.58,
-        "percent_change_7d": 13.11,
-        "price_btc": 0.0768412,
-        "price_usd": 333.882,
-        "rank": 2,
-        "symbol": "ETH",
-        "total_supply": 94263186,
-      },
-    ]
-  }
->
-  <div>
-    <styled.h1>
-      <h1
-        className="sc-bZQynM fpVzPt"
-      >
-        coinage
-      </h1>
-    </styled.h1>
-    <styled.ul>
-      <ul
-        className="sc-EHOje cirpOt"
-      >
-        <CoinRow
-          coin={
-            Object {
-              "24h_volume_usd": 1511610000,
-              "available_supply": 16526487,
-              "id": "bitcoin",
-              "last_updated": 1503791971,
-              "market_cap_usd": 71929882019,
-              "name": "Bitcoin",
-              "percent_change_1h": 0.18,
-              "percent_change_24h": -0.45,
-              "percent_change_7d": 5.29,
-              "price_btc": 1,
-              "price_usd": 4352.4,
-              "rank": 1,
-              "symbol": "BTC",
-              "total_supply": 16526487,
-            }
-          }
-        >
-          <styled.li>
-            <li
-              className="sc-bdVaJa cZlhAg"
-            >
-              <styled.div>
-                <div
-                  className="sc-ifAKCX eMRchN"
-                >
-                  1
-                </div>
-              </styled.div>
-              <styled.div
-                width={30}
-              >
-                <div
-                  className="sc-bxivhb gcqOwr"
-                  width={30}
-                >
-                  <img
-                    src="https://files.coinmarketcap.com/static/img/coins/32x32/bitcoin.png"
-                  />
-                </div>
-              </styled.div>
-              <styled.div
-                moon={true}
-              >
-                <div
-                  className="sc-htpNat iSValt"
-                >
-                  <NumberFormat
-                    allowNegative={true}
-                    decimalSeparator="."
-                    displayType="text"
-                    isAllowed={[Function]}
-                    onChange={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseUp={[Function]}
-                    prefix="$"
-                    suffix=""
-                    thousandSeparator={true}
-                    type="text"
-                    value={4352.4}
-                  >
-                    <span>
-                      $4,352.4
-                    </span>
-                  </NumberFormat>
-                </div>
-              </styled.div>
-              <styled.div>
-                <div
-                  className="sc-bwzfXH eFoxod"
-                >
-                  <NumberFormat
-                    allowNegative={true}
-                    decimalSeparator="."
-                    displayType="text"
-                    isAllowed={[Function]}
-                    onChange={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseUp={[Function]}
-                    prefix="$"
-                    suffix=""
-                    thousandSeparator={true}
-                    type="text"
-                    value={71929882019}
-                  >
-                    <span>
-                      $71,929,882,019
-                    </span>
-                  </NumberFormat>
-                </div>
-              </styled.div>
-              <styled.div>
-                <div
-                  className="sc-bwzfXH eFoxod"
-                >
-                  <NumberFormat
-                    allowNegative={true}
-                    decimalSeparator="."
-                    displayType="text"
-                    isAllowed={[Function]}
-                    onChange={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseUp={[Function]}
-                    prefix="$"
-                    suffix=""
-                    thousandSeparator={true}
-                    type="text"
-                    value={1511610000}
-                  >
-                    <span>
-                      $1,511,610,000
-                    </span>
-                  </NumberFormat>
-                </div>
-              </styled.div>
-            </li>
-          </styled.li>
-        </CoinRow>
-        <CoinRow
-          coin={
-            Object {
-              "24h_volume_usd": 514181000,
-              "available_supply": 94263186,
-              "id": "ethereum",
-              "last_updated": 1503791974,
-              "market_cap_usd": 31472781162,
-              "name": "Ethereum",
-              "percent_change_1h": 0.26,
-              "percent_change_24h": 0.58,
-              "percent_change_7d": 13.11,
-              "price_btc": 0.0768412,
-              "price_usd": 333.882,
-              "rank": 2,
-              "symbol": "ETH",
-              "total_supply": 94263186,
-            }
-          }
-        >
-          <styled.li>
-            <li
-              className="sc-bdVaJa cZlhAg"
-            >
-              <styled.div>
-                <div
-                  className="sc-ifAKCX eMRchN"
-                >
-                  2
-                </div>
-              </styled.div>
-              <styled.div
-                width={30}
-              >
-                <div
-                  className="sc-bxivhb gcqOwr"
-                  width={30}
-                >
-                  <img
-                    src="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png"
-                  />
-                </div>
-              </styled.div>
-              <styled.div
-                moon={true}
-              >
-                <div
-                  className="sc-htpNat iSValt"
-                >
-                  <NumberFormat
-                    allowNegative={true}
-                    decimalSeparator="."
-                    displayType="text"
-                    isAllowed={[Function]}
-                    onChange={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseUp={[Function]}
-                    prefix="$"
-                    suffix=""
-                    thousandSeparator={true}
-                    type="text"
-                    value={333.882}
-                  >
-                    <span>
-                      $333.882
-                    </span>
-                  </NumberFormat>
-                </div>
-              </styled.div>
-              <styled.div>
-                <div
-                  className="sc-bwzfXH eFoxod"
-                >
-                  <NumberFormat
-                    allowNegative={true}
-                    decimalSeparator="."
-                    displayType="text"
-                    isAllowed={[Function]}
-                    onChange={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseUp={[Function]}
-                    prefix="$"
-                    suffix=""
-                    thousandSeparator={true}
-                    type="text"
-                    value={31472781162}
-                  >
-                    <span>
-                      $31,472,781,162
-                    </span>
-                  </NumberFormat>
-                </div>
-              </styled.div>
-              <styled.div>
-                <div
-                  className="sc-bwzfXH eFoxod"
-                >
-                  <NumberFormat
-                    allowNegative={true}
-                    decimalSeparator="."
-                    displayType="text"
-                    isAllowed={[Function]}
-                    onChange={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseUp={[Function]}
-                    prefix="$"
-                    suffix=""
-                    thousandSeparator={true}
-                    type="text"
-                    value={514181000}
-                  >
-                    <span>
-                      $514,181,000
-                    </span>
-                  </NumberFormat>
-                </div>
-              </styled.div>
-            </li>
-          </styled.li>
-        </CoinRow>
-      </ul>
-    </styled.ul>
-  </div>
-</CoinList>
+<div>
+  <styled.h1>
+    coinage
+  </styled.h1>
+  <styled.ul>
+    <CoinRow
+      coin={
+        Object {
+          "24h_volume_usd": 1511610000,
+          "available_supply": 16526487,
+          "id": "bitcoin",
+          "last_updated": 1503791971,
+          "market_cap_usd": 71929882019,
+          "name": "Bitcoin",
+          "percent_change_1h": -0.18,
+          "percent_change_24h": -0.45,
+          "percent_change_7d": 5.29,
+          "price_btc": 1,
+          "price_usd": 4352.4,
+          "rank": 1,
+          "symbol": "BTC",
+          "total_supply": 16526487,
+        }
+      }
+    />
+    <CoinRow
+      coin={
+        Object {
+          "24h_volume_usd": 514181000,
+          "available_supply": 94263186,
+          "id": "ethereum",
+          "last_updated": 1503791974,
+          "market_cap_usd": 31472781162,
+          "name": "Ethereum",
+          "percent_change_1h": 0.26,
+          "percent_change_24h": 0.58,
+          "percent_change_7d": 13.11,
+          "price_btc": 0.0768412,
+          "price_usd": 333.882,
+          "rank": 2,
+          "symbol": "ETH",
+          "total_supply": 94263186,
+        }
+      }
+    />
+  </styled.ul>
+</div>
 `;
 
 exports[`<CoinList /> should render a loading item when list is empty 1`] = `
-<CoinList
-  coins={Array []}
->
-  <div>
-    <styled.h1>
-      <h1
-        className="sc-bZQynM fpVzPt"
-      >
-        coinage
-      </h1>
-    </styled.h1>
-    <styled.ul>
-      <ul
-        className="sc-EHOje cirpOt"
-      >
-        <li>
-          Loading coins...
-        </li>
-      </ul>
-    </styled.ul>
-  </div>
-</CoinList>
+<div>
+  <styled.h1>
+    coinage
+  </styled.h1>
+  <styled.ul>
+    <li>
+      Loading coins...
+    </li>
+  </styled.ul>
+</div>
 `;
