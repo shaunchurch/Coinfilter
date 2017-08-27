@@ -1,13 +1,15 @@
 // @flow
 import React, { Component } from 'react';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
 import { CoinListContainer } from './modules/coinlist';
 
 class App extends Component<{}> {
   render() {
     return (
-      <div className="App">
+      <ThemeProvider theme={theme}>
         <CoinListContainer />
-      </div>
+      </ThemeProvider>
     );
   }
 }

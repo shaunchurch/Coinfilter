@@ -12,21 +12,29 @@ type Props = {
 class CoinRow extends Component<Props> {
   render() {
     const { coin } = this.props;
+
+    let moon = true;
+    if (coin.percent_change_1h < 0) {
+      moon = false;
+    }
     return (
       <Row>
+        <Rank>
+          {coin.rank}
+        </Rank>
         <Logo width={30}>
           <img
             src={`https://files.coinmarketcap.com/static/img/coins/32x32/${coin.id}.png`}
           />
         </Logo>
-        <Cell>
+        <Price moon={moon}>
           <NumberFormat
             value={coin.price_usd}
             displayType={'text'}
             thousandSeparator={true}
             prefix={'$'}
           />
-        </Cell>
+        </Price>
         <Cell>
           <NumberFormat
             value={coin.market_cap_usd}
@@ -52,25 +60,40 @@ const Row = styled.li`
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  margin: 16px 0;
-  padding: 0;
+  margin: 8px 0;
+  padding: 8px 0;
   color: #999;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
   &:hover {
-    color: #222;
+    color: #333;
     background-color: #f9f9f9;
   }
-  transition: color, backgroud-color .15s ease-in-out;
 `;
 
 const Cell = styled.div`
-  width: 180px;
+  display: flex;
+  min-width: 180px;
+  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   align-items: center;
   text-align: right;
+  justify-content: flex-end;
   font-family: 'menlo', 'monaco', 'courier', monospace;
 `;
 
+const Price = Cell.extend`
+  width: 110px;
+  color: ${props => (props.moon ? props.theme.green : props.theme.red)};
+`;
+
 const Logo = styled.div`width: 40px;`;
+const Rank = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #ccc;
+`;
 
 export default CoinRow;

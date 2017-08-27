@@ -13,7 +13,7 @@ class CoinList extends Component<Props> {
     const { coins } = this.props;
     return (
       <div>
-        <h1>CoinList</h1>
+        <Title>coinage</Title>
         <List>
           {coins.length > 0
             ? coins.map(coin => <CoinRow key={coin.id} coin={coin} />)
@@ -25,9 +25,14 @@ class CoinList extends Component<Props> {
 }
 
 const List = styled.ul`
-  max-width: 640px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0;
+`;
+
+const Title = styled.h1`
+  text-align: center;
+  font-family: menlo, monaco, courier, monospace;
 `;
 
 export default CoinList;
