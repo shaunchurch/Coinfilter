@@ -1,8 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CoinRow /> should render <Price /> in the correct style when no moon 1`] = `
+exports[`<CoinRow /> should render <Price /> in the correct style when moon 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 180px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-family: 'menlo','monaco','courier',monospace;
+  width: 110px;
+  color: #4ABDAC;
+}
+
 <div
-  className="sc-htpNat iSValt"
+  className="c0"
+/>
+`;
+
+exports[`<CoinRow /> should render <Price /> in the correct style when no moon 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 180px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-family: 'menlo','monaco','courier',monospace;
+  width: 110px;
+  color: #CD5360;
+}
+
+<div
+  className="c0"
 />
 `;
 
@@ -134,10 +186,4 @@ exports[`<CoinRow /> should render a coin row positive 1`] = `
     />
   </styled.div>
 </styled.li>
-`;
-
-exports[`<CoinRow /> should render in the correct style when moon 1`] = `
-<div
-  className="sc-htpNat iSValt"
-/>
 `;
