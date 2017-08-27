@@ -1,8 +1,8 @@
 // @flow
 import { all } from '../coinlist.reducers';
 import { resCoins, reqCoins } from '../coinlist.actions';
-import CoinJSON from '../../testutils/data/Coin.json';
-import ApiCoinJSON from '../../testutils/data/ApiCoin.json';
+import CoinJSON from '../../../testutils/data/Coin.json';
+import ApiCoinJSON from '../../../testutils/data/ApiCoin.json';
 
 describe('coinlist.actions', () => {
   describe('resCoins', () => {

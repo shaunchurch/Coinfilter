@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { CoinListContainer } from './coinlist';
+import { CoinListContainer } from './modules/coinlist';
 
 class App extends Component<{}> {
   render() {

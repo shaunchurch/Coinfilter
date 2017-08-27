@@ -1,10 +1,10 @@
 // @flow
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { reqCoins, resCoins } from './coinlist.actions';
+import { reqCoins } from './coinlist.actions';
 import { selectCoins } from './coinlist.selectors';
 import CoinList from './components/CoinList';
-import type { AppState } from '../types';
+import type { AppState } from '../../types';
 import type { Connector } from 'react-redux';
 import type { Coin } from './coinlist.types';
 
@@ -17,8 +17,8 @@ class CoinListContainer extends Component<Props> {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch(reqCoins());
-    // dispatch(resCoins(res));
   }
+
   render() {
     return <CoinList coins={this.props.coins} {...this.props} />;
   }

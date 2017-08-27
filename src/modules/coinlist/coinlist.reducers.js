@@ -18,11 +18,11 @@ export const all = (state: Array<Coin> = [], action: Action): Array<Coin> => {
  */
 const typeCoin = (coin: ApiCoin): Coin => {
   return {
-    '24h_volume_usd': parseInt(coin['24h_volume_usd']),
-    available_supply: parseInt(coin.available_supply),
+    '24h_volume_usd': parseInt(coin['24h_volume_usd'], 10),
+    available_supply: parseInt(coin.available_supply, 10),
     id: coin.id,
-    last_updated: parseInt(coin.last_updated),
-    market_cap_usd: parseInt(coin.market_cap_usd),
+    last_updated: parseInt(coin.last_updated, 10),
+    market_cap_usd: parseInt(coin.market_cap_usd, 10),
     name: coin.name,
     percent_change_1h: parseFloat(coin.percent_change_1h),
     percent_change_7d: parseFloat(coin.percent_change_7d),

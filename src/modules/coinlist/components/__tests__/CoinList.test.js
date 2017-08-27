@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import CoinList from '../CoinList';
-import CoinJSON from '../../../testutils/data/Coin.json';
+import CoinJSON from '../../../../testutils/data/Coin.json';
 
 describe('<CoinList />', () => {
   it('should render a loading item when list is empty', () => {
