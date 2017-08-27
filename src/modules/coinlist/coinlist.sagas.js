@@ -1,4 +1,3 @@
-// @flow
 import { all, call, put, takeLatest } from 'redux-saga/effects';
 import CoinMarketCap from '../../services/CoinMarketCap';
 import type { Action, Coin } from './coinlist.types';
