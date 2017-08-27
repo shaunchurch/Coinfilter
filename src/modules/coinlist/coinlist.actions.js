@@ -13,3 +13,10 @@ export const resCoins = (coins: Array<ApiCoin>): Action => {
     payload: coins
   };
 };
+
+export const resCoinsFail = (error: Error): Action => {
+  return {
+    type: 'coinlist/RES_COINS_FAIL',
+    error
+  };
+};

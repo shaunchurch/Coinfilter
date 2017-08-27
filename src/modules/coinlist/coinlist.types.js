@@ -36,4 +36,4 @@ export type ApiCoin = {
 export type Action =
   | { type: 'coinlist/REQ_COINS' }
   | { type: 'coinlist/RES_COINS_SUCCESS', payload: Array<ApiCoin> }
-  | { type: 'coinlist/RES_COINS_FAIL' };
+  | { type: 'coinlist/RES_COINS_FAIL', error: Error };
