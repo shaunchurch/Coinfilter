@@ -1,6 +1,6 @@
 # Coinfilter
 
-A React application for tracking and learning about cryprocurrencies.
+A React application for tracking and learning about cryptocurrencies.
 
 [See live demo](https://coinfilter-mjmzvdcuyc.now.sh)
 
