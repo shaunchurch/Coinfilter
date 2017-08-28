@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`coinlist.actions doAddHodl should return a coinlist/ADD_HODL action 1`] = `
+Object {
+  "payload": "bitcoin",
+  "type": "coinlist/ADD_HODL",
+}
+`;
+
 exports[`coinlist.actions reqCoins should return a coinlist/REQ_COINS action 1`] = `
 Object {
   "type": "coinlist/REQ_COINS",

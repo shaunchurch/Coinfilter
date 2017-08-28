@@ -2,11 +2,50 @@
 import { combineReducers } from 'redux';
 import type { ApiCoin, Coin, Action } from './coinlist.types';
 
-export const all = (state: Array<Coin> = [], action: Action): Array<Coin> => {
+type AllState = {
+  [id: string]: Coin
+};
+
+export const data = (state: AllState = {}, action: Action): AllState => {
   switch (action.type) {
     case 'coinlist/RES_COINS_SUCCESS':
-      const coins = action.payload.map((coin: ApiCoin) => typeCoin(coin));
+      const coinsObj = {};
+      action.payload.map((coin: ApiCoin) => {
+        return (coinsObj[coin.id] = typeCoin(coin));
+      });
+      return coinsObj;
+    default:
+      return state;
+  }
+};
+
+export const all = (
+  state: Array<string> = [],
+  action: Action
+): Array<string> => {
+  switch (action.type) {
+    case 'coinlist/RES_COINS_SUCCESS':
+      const coins = action.payload.map((coin: ApiCoin) => {
+        const { id } = coin;
+        return id;
+      });
       return coins;
+    default:
+      return state;
+  }
+};
+
+export const hodls = (
+  state: Array<string> = [],
+  action: Action
+): Array<string> => {
+  switch (action.type) {
+    case 'coinlist/ADD_HODL':
+      return state.includes(action.payload)
+        ? state
+        : [...state, action.payload];
+    case 'coinlist/REMOVE_HODL':
+      return state.filter(item => item !== action.payload);
     default:
       return state;
   }
@@ -36,5 +75,7 @@ const typeCoin = (coin: ApiCoin): Coin => {
 };
 
 export default combineReducers({
-  all
+  data,
+  all,
+  hodls
 });

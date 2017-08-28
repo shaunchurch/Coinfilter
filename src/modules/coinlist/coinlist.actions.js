@@ -20,3 +20,17 @@ export const resCoinsFail = (error: Error): Action => {
     error
   };
 };
+
+export const doAddHodl = (coinId: string): Action => {
+  return {
+    type: 'coinlist/ADD_HODL',
+    payload: coinId
+  };
+};
+
+export const doRemoveHodl = (coinId: string): Action => {
+  return {
+    type: 'coinlist/REMOVE_HODL',
+    payload: coinId
+  };
+};

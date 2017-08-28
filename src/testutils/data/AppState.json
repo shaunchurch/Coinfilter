@@ -1,0 +1,58 @@
+{
+  "coins": {
+    "all": ["bitcoin", "litecoin", "ethereum"],
+    "hodls": ["ethereum"],
+    "data": {
+      "bitcoin": {
+        "id": "bitcoin",
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "rank": 1,
+        "price_usd": 4352.4,
+        "price_btc": 1.0,
+        "24h_volume_usd": 1511610000.0,
+        "market_cap_usd": 71929882019.0,
+        "available_supply": 16526487.0,
+        "total_supply": 16526487.0,
+        "percent_change_1h": -0.18,
+        "percent_change_24h": -0.45,
+        "percent_change_7d": 5.29,
+        "last_updated": 1503791971
+      },
+
+      "ethereum": {
+        "id": "ethereum",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "rank": 2,
+        "price_usd": 333.882,
+        "price_btc": 0.0768412,
+        "24h_volume_usd": 514181000.0,
+        "market_cap_usd": 31472781162.0,
+        "available_supply": 94263186.0,
+        "total_supply": 94263186.0,
+        "percent_change_1h": 0.26,
+        "percent_change_24h": 0.58,
+        "percent_change_7d": 13.11,
+        "last_updated": 1503791974
+      },
+
+      "litecoin": {
+        "id": "litecoin",
+        "name": "Litecoin",
+        "symbol": "LTC",
+        "rank": 1,
+        "price_usd": 4352.4,
+        "price_btc": 1.0,
+        "24h_volume_usd": 1511610000.0,
+        "market_cap_usd": 71929882019.0,
+        "available_supply": 16526487.0,
+        "total_supply": 16526487.0,
+        "percent_change_1h": -0.18,
+        "percent_change_24h": -0.45,
+        "percent_change_7d": 5.29,
+        "last_updated": 1503791971
+      }
+    }
+  }
+}

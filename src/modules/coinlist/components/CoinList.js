@@ -5,18 +5,25 @@ import CoinRow from './CoinRow';
 import type { Coin } from '../coinlist.types';
 
 type Props = {
-  coins: Array<Coin>
+  title: string,
+  coins: Array<Coin>,
+  handleClick: Function
 };
 
 class CoinList extends Component<Props> {
   render() {
-    const { coins } = this.props;
+    const { coins, handleClick, title } = this.props;
+
     return (
       <div>
-        <Title>coinage</Title>
+        <Title>
+          {title}
+        </Title>
         <List>
-          {coins.length > 0
-            ? coins.map(coin => <CoinRow key={coin.id} coin={coin} />)
+          {coins.length
+            ? coins.map(coin =>
+                <CoinRow key={coin.id} coin={coin} handleClick={handleClick} />
+              )
             : <li>Loading coins...</li>}
         </List>
       </div>
@@ -25,7 +32,7 @@ class CoinList extends Component<Props> {
 }
 
 const List = styled.ul`
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
   padding: 0;
 `;

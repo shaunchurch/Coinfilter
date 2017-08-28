@@ -2,9 +2,7 @@
 
 exports[`<CoinList /> should render a list of coins when supplied 1`] = `
 <div>
-  <styled.h1>
-    coinage
-  </styled.h1>
+  <styled.h1 />
   <styled.ul>
     <CoinRow
       coin={
@@ -52,9 +50,7 @@ exports[`<CoinList /> should render a list of coins when supplied 1`] = `
 
 exports[`<CoinList /> should render a loading item when list is empty 1`] = `
 <div>
-  <styled.h1>
-    coinage
-  </styled.h1>
+  <styled.h1 />
   <styled.ul>
     <li>
       Loading coins...

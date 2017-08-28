@@ -59,7 +59,9 @@ exports[`<CoinRow /> should render <Price /> in the correct style when no moon 1
 `;
 
 exports[`<CoinRow /> should render a coin row negative 1`] = `
-<styled.li>
+<styled.li
+  onClick={null}
+>
   <styled.div>
     2
   </styled.div>
@@ -67,6 +69,7 @@ exports[`<CoinRow /> should render a coin row negative 1`] = `
     width={30}
   >
     <img
+      alt="Ethereum"
       src="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png"
     />
   </styled.div>
@@ -124,7 +127,9 @@ exports[`<CoinRow /> should render a coin row negative 1`] = `
 `;
 
 exports[`<CoinRow /> should render a coin row positive 1`] = `
-<styled.li>
+<styled.li
+  onClick={null}
+>
   <styled.div>
     1
   </styled.div>
@@ -132,6 +137,7 @@ exports[`<CoinRow /> should render a coin row positive 1`] = `
     width={30}
   >
     <img
+      alt="Bitcoin"
       src="https://files.coinmarketcap.com/static/img/coins/32x32/bitcoin.png"
     />
   </styled.div>

@@ -4,6 +4,8 @@ exports[`initialState 1`] = `
 Object {
   "coins": Object {
     "all": Array [],
+    "data": Object {},
+    "hodls": Array [],
   },
 }
 `;
