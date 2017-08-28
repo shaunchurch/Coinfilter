@@ -4,8 +4,9 @@ A React application for tracking and learning about cryprocurrencies.
 
 [See live demo](https://coinfilter-mjmzvdcuyc.now.sh)
 
-This is an experiment using the following with decent test coverage:
+This is an experiment using the following:
 
+- Flow
 - Redux
 - Redux Saga
 - Styled Components
