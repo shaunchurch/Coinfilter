@@ -31,12 +31,8 @@ export const selectHodls = (state: AppState): Array<Coin> => {
  */
 export const selectOthers = (state: AppState): Array<Coin> => {
   return state.coins.all
-    .map(coin => {
-      return state.coins.data[coin];
-    })
-    .filter(coin => {
-      return !state.coins.hodls.includes(coin.id);
-    })
+    .map(coin => state.coins.data[coin])
+    .filter(coin => !state.coins.hodls.includes(coin.id))
     .sort(sortByMarketCap);
 };
 
